@@ -108,7 +108,7 @@ export default class ColumnChart extends Component {
       if (this.state.sortedData.length === 1) {
         plusGap = 0
       } else if (selectedIndex === standardSeries.data.length - 1) {
-        plusGap = -50
+        plusGap = 0
       }
       // 차트 width를 마지막에 늘려야겠음.
 
