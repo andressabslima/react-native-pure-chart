@@ -318,7 +318,9 @@ export const numberWithCommas = (x, summary = true) => {
     }
   }
 
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + postfix
+  var numero = x.toFixed(2).split('.');
+  numero[0] = numero[0].split(/(?=(?:...)*$)/).join('.');
+  return numero.join(',');
 }
 
 export const drawXAxis = (color = '#e0e0e0') => {
