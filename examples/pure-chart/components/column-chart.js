@@ -188,7 +188,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     margin: 0,
     paddingRight: 10,
-    overflow: 'hidden'
+    overflow: 'hidden',
+    width: 500
   },
   chartView: {
     flexDirection: 'row',
