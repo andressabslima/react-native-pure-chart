@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     margin: 0,
     paddingRight: 10,
     overflow: 'hidden',
-    width: 500
+    width: '100%'
   },
   chartView: {
     flexDirection: 'row',
