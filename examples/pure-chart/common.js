@@ -320,7 +320,13 @@ export const numberWithCommas = (x, summary = true) => {
 
   var numero = x.toFixed(2).split('.');
   numero[0] = numero[0].split(/(?=(?:...)*$)/).join('.');
-  return numero.join(',');
+  console.log('split: ',numero[1]);
+  if(numero[1] == '00'){
+    return numero[0];
+  }
+  else{
+    return numero.join(',');
+  }
 }
 
 export const drawXAxis = (color = '#e0e0e0') => {
